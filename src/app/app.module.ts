@@ -20,7 +20,7 @@ registerLocaleData(en);
     AppComponent,
     HomeComponent,
     ClientsComponent,
-    ContractorsComponent
+    ContractorsComponent,
   ],
   imports: [
     BrowserModule,

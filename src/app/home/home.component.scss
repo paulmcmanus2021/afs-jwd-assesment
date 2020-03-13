@@ -1,8 +1,9 @@
 
       .logo {
         width: 120px;
-        height: 31px;
-        background: rgba(255, 255, 255, 0.2);
+        height: 40px;
+        background-image: url("https://lh3.googleusercontent.com/Xyh9enOUBDchcDmdxVrzUZFEFluyNUUUbSV0-uTXNfylZeRSyN3HsSaSSITWxHFUHz7ukg=s170");
+        background-size: 120px 40px;
         margin: 16px 28px 16px 0;
         float: left;
       }
@@ -13,10 +14,6 @@
 
       .outer-content {
         padding: 0 50px;
-      }
-
-      nz-breadcrumb {
-        margin: 16px 0;
       }
 
       .inner-layout {

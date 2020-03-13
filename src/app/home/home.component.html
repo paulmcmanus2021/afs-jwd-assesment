@@ -1,29 +1,27 @@
-<router-outlet></router-outlet>
-
-    <nz-layout>
-      <nz-header>
-        <div class="logo"></div>
-        <ul nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" class="header-menu">
-          <li nz-menu-item>Home</li>
-          <li nz-menu-item nzSelected>Clients</li>
-          <li nz-menu-item>Contractors</li>
-        </ul>
-      </nz-header>
-      <nz-content class="outer-content">
-        <nz-layout class="inner-layout">
-          <nz-sider nzWidth="200px" nzTheme="light">
-            <ul nz-menu nzMode="inline" class="sider-menu">
-              <li nz-submenu nzOpen nzIcon="user">
-                <ul>
-                  <li nz-menu-item nzSelected>Home</li>
-                  <li nz-menu-item>Clients</li>
-                  <li nz-menu-item>Contractors</li>
-                </ul>
-              </li> 
+<nz-layout>
+  <nz-header>
+    <div class="logo"></div>
+    <ul nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" class="header-menu">
+      <li routerLink="/home" nz-menu-item nzSelected>Home</li>
+      <li routerLink="/home/clients" nz-menu-item>Clients</li>
+      <li routerLink="/home/contractors" nz-menu-item>Contractors</li>
+    </ul>
+  </nz-header>
+  <nz-content class="outer-content">
+    <nz-layout class="inner-layout">
+      <nz-sider nzWidth="200px" nzTheme="light">
+        <ul nz-menu nzMode="inline" class="sider-menu">
+          <li nz-submenu nzOpen nzIcon="user">
+            <ul>
+              <li routerLink="/home" nz-menu-item nzSelected>Home</li>
+              <li routerLink="/home/clients" nz-menu-item>Clients</li>
+              <li routerLink="/home/contractors" nz-menu-item>Contractors</li>
             </ul>
-          </nz-sider>
-          <nz-content class="inner-content">Content</nz-content>
-        </nz-layout>
-        <nz-footer>Paul McManus</nz-footer>
-      </nz-content>
+          </li> 
+        </ul>
+      </nz-sider>
+      <nz-content  class="inner-content"><router-outlet></router-outlet></nz-content>
     </nz-layout>
+    <nz-footer>Paul McManus</nz-footer>
+  </nz-content>
+</nz-layout>
